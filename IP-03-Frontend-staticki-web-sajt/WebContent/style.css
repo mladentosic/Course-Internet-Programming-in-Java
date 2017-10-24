@@ -44,10 +44,10 @@ body{
 				color: white;
 			}
 			#nav ul li a:hover{
-				background-color: #ffb424;
+				background-color: #42ff33;
 				box-shadow: 0px 1px 1px #666;
 			}
-			#nav ul li a:active{ background-color: #ff8f00; }
+			#nav ul li a:active{ background-color: #33ff5b; }
 
 #content{
 	margin: 30px 0;
