@@ -53,6 +53,24 @@
                 </div>
             </div>
             <div class="form-group">
+                <h:outputLabel for="godina_studija" class="control-label col-sm-2">Godina studija:</h:outputLabel>
+                <div class="col-sm-4">
+                    <h:inputText id="godina_studija-id" value="#{editRecordObj.godina_studija}" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <h:outputLabel for="budjet" class="control-label col-sm-2">Budžet:</h:outputLabel>
+                <div class="col-sm-4">
+                    <h:inputText id="budjet-id" value="#{editRecordObj.budjet}" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <h:outputLabel for="stanje_racuna" class="control-label col-sm-2">Stanje računa:</h:outputLabel>
+                <div class="col-sm-4">
+                    <h:inputText id="email-id" value="#{editRecordObj.stanje_racuna}" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-4">
                     <h:commandButton value="Ažuriraj" action="#{studentBean.updateStudentDetails(editRecordObj)}" class="btn btn-primary updateBtnStyle" />

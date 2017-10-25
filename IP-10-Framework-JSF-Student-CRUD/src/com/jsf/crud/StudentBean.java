@@ -17,6 +17,9 @@ public class StudentBean {
 	private String password;  
 	private String gender;  
 	private String address;
+	private int godina_studija;
+	private boolean budjet;
+	private int stanje_racuna;
 
 	public ArrayList<StudentBean>studentsListFromDB;
 
@@ -98,4 +101,29 @@ public class StudentBean {
 	public String deleteStudentRecord(int studentId) {
 		return DatabaseOperation.deleteStudentRecordInDB(studentId);
 	}
+
+	public boolean getBudjet() {
+		return budjet;
+	}
+
+	public void setBudjet(boolean budjet) {
+		this.budjet = budjet;
+	}
+
+	public int getStanje_racuna() {
+		return stanje_racuna;
+	}
+
+	public void setStanje_racuna(int stanje_racuna) {
+		this.stanje_racuna = stanje_racuna;
+	}
+
+	public int getGodina_studija() {
+		return godina_studija;
+	}
+
+	public void setGodina_studija(int godina_studija) {
+		this.godina_studija = godina_studija;
+	}
+
 }

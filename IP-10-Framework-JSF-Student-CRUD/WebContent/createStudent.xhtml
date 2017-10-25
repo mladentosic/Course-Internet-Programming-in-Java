@@ -64,6 +64,30 @@
             </div>
         </div>
         <div class="form-group">
+            <h:outputLabel for="godina_studija" class="control-label col-sm-4">Godina studija:</h:outputLabel>
+            <div class="col-sm-4">
+                <h:inputTextarea id="godina_studija-id" value="#{studentBean.godina_studija}" validatorMessage="Godina studija je obavezna.">
+                    <f:validateRequired/>
+                </h:inputTextarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <h:outputLabel for="budjet" class="control-label col-sm-4">Budžet:</h:outputLabel>
+            <div class="col-sm-4">
+                <h:inputTextarea id="budjet-id" value="#{studentBean.budjet}" validatorMessage="Opcija budžeta je obavezna.">
+                    <f:validateRequired/>
+                </h:inputTextarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <h:outputLabel for="stanje_racuna" class="control-label col-sm-4">Stanje računa:</h:outputLabel>
+            <div class="col-sm-4">
+                <h:inputTextarea id="stanje_racuna-id" value="#{studentBean.stanje_racuna}" validatorMessage="Stanje računa je obavezno.">
+                    <f:validateRequired/>
+                </h:inputTextarea>
+            </div>
+        </div>
+        <div class="form-group">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
                 <div class="col-sm-2">
