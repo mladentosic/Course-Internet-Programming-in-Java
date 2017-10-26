@@ -19,10 +19,12 @@
 			<h:message for="lastName" style="color: red;" /><br/>
 			
 			<h:outputLabel>Address: </h:outputLabel><br/>
-			<h:inputText id="address" value="#{contactDB.currentContact.address}" /><br/>
+			<h:inputText id="address" value="#{contactDB.currentContact.address}"  required="true" requiredMessage=" * Obavezno polje" />
+			<h:message for="lastName" style="color: red;" /><br/>
 			
 			<h:outputLabel>Mobile number: </h:outputLabel><br/>
-			<h:inputText id="mobileNumber" value="#{contactDB.currentContact.mobileNumber}" /><br/>
+			<h:inputText id="mobileNumber" value="#{contactDB.currentContact.mobileNumber}" required="true" requiredMessage=" * Obavezno polje" />
+			<h:message for="lastName" style="color: red;" /><br/>
 			
 			<h:outputLabel>Fixed number: </h:outputLabel><br/>
 			<h:inputText id="fixedNumber" value="#{contactDB.currentContact.fixedNumber}" /><br/>
